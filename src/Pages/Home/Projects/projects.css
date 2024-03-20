@@ -1,0 +1,8 @@
+#projects {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* padding: 0 15px; */
+}

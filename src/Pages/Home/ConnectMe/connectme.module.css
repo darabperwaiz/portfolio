@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    margin: 150px 0;
+    padding: 15px;
+}
+
+.wrapper {
+    display: flex;
+    max-width: 900px;
+    background-color: var(--overlay);
+    margin: 0 auto;
+    /* height: 150px; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 50px;
+    color: white;
+    border-radius: 8px;
+}
+
+.wrapper h3 {
+    font-size: 25px;
+}
+
+.wrapper p {
+    width: 50%;
+    text-align: center;
+}
+
+.wrapper button {
+    outline: none;
+    border: none;
+    background-color: var(--secondary);
+    font-weight: 600;
+    padding: 10px 24px;
+    border-radius: 10px;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+

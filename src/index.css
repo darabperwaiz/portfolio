@@ -1,10 +1,81 @@
-body {
+.dark-theme {
+  --bg: #101828;
+  --overlay: #ffffff12;
+  --color: #FFFFFF;
+  --primary: #eaecf0;
+  --secondary: #7f56d9;
+  --title: #ffffff90;
+  --newwidth: 100%;
+  --newheight: 100%;
+  --borderRadius: 0;
+  --semiTransparent: #7f56d94b;
+  --heroImage: #ffffff39;
+}
+
+.light-theme {
+  --bg: #fcfcfd;
+  --color: #101828;
+  --primary: #7f56d9;
+  --secondary: #eaecf0;
+  --title: #ffffff96;
+  --newwidth: 0;
+  --newheight: 0;
+  --borderRadius: 50%;
+  --overlay: var(--primary);
+  --semiTransparent: #eaecf04a;
+  --heroImage: #7f56d991;
+
+}
+
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fcfcfd;;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* transition: background-color 0.8s linear;  */
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: var(--newwidth);
+  height: 100%;
+  background-color: #101828;
+  transition: width .5s ease-in-out;
+  z-index: -1;
+}
+
+
+i.fa-solid.fa-sun {
+  position: relative;
+  right: 3px;
+  color: #fff7ee;
+  font-size: 18px;
+  
+}
+
+i.fa-solid.fa-moon {
+  position: relative;
+  left: 3px;
+  color: #101828;
+  font-size: 18px;
+}
+
+i.fa-solid.fa-bars {
+  font-size: 42px;
+  color: var(--primary);
 }
 
 code {
