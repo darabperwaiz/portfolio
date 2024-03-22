@@ -17,7 +17,7 @@ const Aboutme = () => {
             <div className={style.left}>
               <div className={style.aboutImage}>
                 <img
-                  src={require("../../../assets/images/avatar2.png")}
+                  src={require("../../../assets/images/avatar2.webp")}
                   alt=""
                 />
               </div>

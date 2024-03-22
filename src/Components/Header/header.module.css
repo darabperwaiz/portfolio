@@ -1,10 +1,48 @@
+.loaderContainer {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    /* align-items: center; */
+    position: relative;
+}
+
+.loaderWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    /* background-color: red; */
+    height: 300px;
+}
+
+.loaderWrapper h1 {
+    color: var(--primary);
+    font-size: 50px;
+}
+
+.loader {
+    height: 4px;
+    width: 188px;
+    --c:no-repeat linear-gradient(var(--primary) 0 0);
+    background: var(--c),var(--c),#d7b8fc;
+    background-size: 60% 100%;
+    animation: l16 3s infinite;
+  }
+
+  @keyframes l16 {
+    0%   {background-position:-150% 0,-150% 0}
+    66%  {background-position: 250% 0,-150% 0}
+    100% {background-position: 250% 0, 250% 0}
+  }
+
 .headerWrapper {
     background-color: var(--bg);
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     box-shadow: 0 1px 0px var(--primary);
     transition: box-shadow .5s ease-in-out, background-color .5s ease-in-out;
-    z-index: 1;
+    /* z-index: 1; */
 }
 .header {
     display: flex;

@@ -63,7 +63,7 @@ const Hero = () => {
         <div className={style.image}>
         <img
             className={style.banner}
-            src={require("../../../assets/images/heroImg.png")}
+            src={require("../../../assets/images/heroImg.webp")}
             alt="sibghatullah"
           />
           <div className={`${style.icon} ${style.css}`}>

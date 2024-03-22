@@ -42,5 +42,8 @@
         flex-direction: column;
         gap: 24px;
     }
+    .wrapper p {
+        width: 100%;
+    }
 }
 

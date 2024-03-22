@@ -11,7 +11,7 @@ export const projects = [
     id: 2,
     title: 'Food Recipe Web Application',
     description: '',
-    image: 'restaurant-app.png',
+    image: 'restaurant-app.webp',
     github: 'https://github.com/darabperwaiz/restaurant-app',
     live: 'https://darabperwaiz.github.io/restaurant-app/',
   },
