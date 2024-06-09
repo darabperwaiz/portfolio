@@ -12,31 +12,31 @@ const {pathname} = location;
   
   const scrollWidthOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -120; 
+    const yOffset = -80; 
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
 }
 
-  useEffect(() => {
-    if(pathname==='/blogs') {
-      setIsBtn(true);
-      return;
-    }else {
-      setIsBtn(false);
-      return;
-    }
-  }, [pathname])
+  // useEffect(() => {
+  //   if(pathname==='/blogs') {
+  //     setIsBtn(true);
+  //     return;
+  //   }else {
+  //     setIsBtn(false);
+  //     return;
+  //   }
+  // }, [pathname])
   return (
     <>
-      {link.startsWith("#") ? (
+      {/* {link.startsWith("#") ? ( */}
         <NavHashLink
           smooth
-          to={isBtn ? '': link}
+          to={link}
           scroll={el => scrollWidthOffset(el)}
         >
           {title}
         </NavHashLink>
-      ) : (
-        <NavLink
+      {/* ) : ( */}
+        {/* <NavLink
           style={({ isActive }) =>
             isActive ? { color: "#6941c6" } : null
           }
@@ -44,7 +44,7 @@ const {pathname} = location;
         >
           {title}
         </NavLink>
-      )}
+      )} */}
     </>
   );
 };

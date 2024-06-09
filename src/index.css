@@ -1,10 +1,19 @@
+:root {
+  --content-max-width: 80rem;
+  --min-post-card-width: 240px;
+  --min-feat-post-card-width: 340px;
+  --min-post-card-width-sm: 220px;
+  --min-feat-post-card-width-sm: 320px;
+  --max-post-card-width: 400px;
+}
+
 .dark-theme {
-  --bg: #101828;
-  --overlay: #ffffff12;
+  --bg: #202124;
+  --overlay: #28292a;
   --color: #FFFFFF;
-  --primary: #eaecf0;
+  --primary: #fff;
   --secondary: #7f56d9;
-  --title: #ffffff90;
+  --title: hsla(0,0%,100%,.87);
   --newwidth: 100%;
   --newheight: 100%;
   --borderRadius: 0;
@@ -16,8 +25,8 @@
   --bg: #fcfcfd;
   --color: #101828;
   --primary: #7f56d9;
-  --secondary: #eaecf0;
-  --title: #ffffff96;
+  --secondary: #fff;
+  --title: #fff;
   --newwidth: 0;
   --newheight: 0;
   --borderRadius: 50%;
@@ -52,7 +61,7 @@ body::before {
   left: 0px;
   width: var(--newwidth);
   height: 100%;
-  background-color: #101828;
+  background-color: #202124;
   transition: width .5s ease-in-out;
   z-index: -1;
 }

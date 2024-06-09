@@ -1,48 +1,9 @@
-.loaderContainer {
-    display: flex;
-    min-height: 100vh;
-    justify-content: center;
-    /* align-items: center; */
-    position: relative;
-}
-
-.loaderWrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 15px;
-    /* background-color: red; */
-    height: 300px;
-}
-
-.loaderWrapper h1 {
-    color: var(--primary);
-    font-size: 50px;
-}
-
-.loader {
-    height: 4px;
-    width: 188px;
-    --c:no-repeat linear-gradient(var(--primary) 0 0);
-    background: var(--c),var(--c),#d7b8fc;
-    background-size: 60% 100%;
-    animation: l16 3s infinite;
-  }
-
-  @keyframes l16 {
-    0%   {background-position:-150% 0,-150% 0}
-    66%  {background-position: 250% 0,-150% 0}
-    100% {background-position: 250% 0, 250% 0}
-  }
 
 .headerWrapper {
     background-color: var(--bg);
-    /* position: sticky;
-    top: 0; */
     box-shadow: 0 1px 0px var(--primary);
     transition: box-shadow .5s ease-in-out, background-color .5s ease-in-out;
-    /* z-index: 1; */
+    margin-bottom: 10px;
 }
 .header {
     display: flex;
@@ -117,11 +78,12 @@
     color: var(--secondary);
     text-decoration: none;
     padding: 5px;
-    width: 100px;
+    width: 120px;
     height: 35px;
     font-weight: 600;
     display: flex;
     align-items: center;
+    gap: 10px;
     border-radius: 5px;
     justify-content: center;
     transition: background-color 1s ease-in-out;;
@@ -129,6 +91,47 @@
 
 .hamburger {
     display: none;
+}
+
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.loaderWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.loaderWrapper h1 {
+    color: var(--primary);
+}
+
+.loader {
+    background-color: var(--secondary);
+    height: 4px;
+}
+.progressLoader {
+    display: flex;
+    background-color: var(--primary);
+    height: 100%;
+    width: 0%;
+    animation: progress 5s alternate-reverse infinite;
+}
+
+@keyframes progress {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
 }
 
 @media screen and (max-width: 768px) {

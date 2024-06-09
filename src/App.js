@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './App.css';
 import Header from "./Components/Header/Header";
 import Home from './Pages/Home/Home'
-import Blogs from "./Pages/Blog/Blogs";
+import Blogs from "./Pages/Blogs/Blogs";
 
 const route = createBrowserRouter([
   {path: '/', element: <Header />, children: [

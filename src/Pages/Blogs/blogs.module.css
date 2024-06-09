@@ -1,0 +1,31 @@
+.flex_section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    float: left;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    max-width: 100%;
+    width: 1145px;
+}
+
+.outer_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sticky_bar::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.main {
+    position: relative;
+    overflow: hidden;
+    margin: 0 10px 26px;
+}
