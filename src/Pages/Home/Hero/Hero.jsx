@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./hero.module.css";
 import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 // import resume from "../../../assets/files/sibghatullah___resume.pdf";
 
 const Hero = () => {
@@ -109,8 +110,10 @@ const Hero = () => {
         </div>
       </div>
       <div className={style.scroll__down}>
+        <NavHashLink to='#projects'>
         <p>Scroll Down</p>
         <i class="fa-solid fa-angles-down"></i>
+        </NavHashLink>
       </div>
     </div>
   );
