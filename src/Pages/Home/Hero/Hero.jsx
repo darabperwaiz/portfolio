@@ -32,14 +32,14 @@ const Hero = () => {
         </div>
         <div className={style.social}>
           <Link
-            to="https://www.linkedin.com/in/sibghatullah/"
+            to="https://www.linkedin.com/in/md-sibghatullah/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i class="fa-brands fa-linkedin"></i>
           </Link>
           <Link
-            to="https://github.com/sibghatullah"
+            to="https://github.com/darabperwaiz"
             target="_blank"
             rel="noopener noreferrer"
           >
